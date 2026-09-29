@@ -14,5 +14,16 @@ namespace OrçamentoDev.Views
         {
             InitializeComponent();
         }
+
+        private void lblBoaVinda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.OpenForms["FrmLogin"] ?.Show();
+            this.Close();
+        }
     }
 }
