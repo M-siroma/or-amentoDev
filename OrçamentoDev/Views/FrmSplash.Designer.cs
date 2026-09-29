@@ -38,17 +38,19 @@
             // LblTituloSplash
             // 
             LblTituloSplash.AutoSize = true;
-            LblTituloSplash.Location = new Point(330, 38);
+            LblTituloSplash.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LblTituloSplash.Location = new Point(369, 37);
             LblTituloSplash.Name = "LblTituloSplash";
-            LblTituloSplash.Size = new Size(122, 15);
+            LblTituloSplash.Size = new Size(260, 32);
             LblTituloSplash.TabIndex = 0;
             LblTituloSplash.Text = "SistemaDeOrcamento";
+            LblTituloSplash.Click += LblTituloSplash_Click;
             // 
             // prgCarregando
             // 
             prgCarregando.Location = new Point(-3, 209);
             prgCarregando.Name = "prgCarregando";
-            prgCarregando.Size = new Size(770, 41);
+            prgCarregando.Size = new Size(997, 41);
             prgCarregando.TabIndex = 1;
             // 
             // timer1
@@ -58,9 +60,10 @@
             // lblCarregando
             // 
             lblCarregando.AutoSize = true;
-            lblCarregando.Location = new Point(324, 89);
+            lblCarregando.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblCarregando.Location = new Point(382, 94);
             lblCarregando.Name = "lblCarregando";
-            lblCarregando.Size = new Size(128, 15);
+            lblCarregando.Size = new Size(227, 30);
             lblCarregando.TabIndex = 2;
             lblCarregando.Text = "Carregando Modulos...";
             // 
@@ -68,11 +71,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(766, 250);
+            BackColor = SystemColors.MenuHighlight;
+            ClientSize = new Size(1006, 250);
             Controls.Add(lblCarregando);
             Controls.Add(prgCarregando);
             Controls.Add(LblTituloSplash);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmSplash";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Splash";
             ResumeLayout(false);
             PerformLayout();

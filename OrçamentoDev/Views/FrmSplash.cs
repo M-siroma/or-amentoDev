@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-namespace OrçamentoDev.Views
+﻿namespace OrçamentoDev.Views
 {
     public partial class FrmSplash : Form
     {
@@ -30,7 +22,7 @@ namespace OrçamentoDev.Views
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(prgCarregando.Value < 100)
+            if (prgCarregando.Value < 100)
             {
                 prgCarregando.Value += 2;
 
@@ -38,10 +30,15 @@ namespace OrçamentoDev.Views
             else
             {
                 timersplash.Stop();
-                FrmLogin login = new FrmLogin();
+                FrmLogim login = new FrmLogim();
                 login.Show();
                 this.Hide();
             }
+        }
+
+        private void LblTituloSplash_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
